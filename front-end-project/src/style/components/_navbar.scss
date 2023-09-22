@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #1F1F1F;
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        font-size: 1.4rem;
+        width: 60%;
+        margin: auto;
+
+        li {
+
+            a {
+                transition: .2s;
+            }
+
+            a:hover {
+                background-image: linear-gradient(to right, #00C4F0, #0266C2);
+                background-clip: text;
+                color: transparent;
+                transition: .4s;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
