@@ -1,18 +1,17 @@
-import './style/index.scss';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<Home />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
