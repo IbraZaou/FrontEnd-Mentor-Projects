@@ -1,0 +1,79 @@
+@import '../variable.scss';
+
+.container_project {
+    background-color: $first-color;
+    height: 100vh;
+
+    h2 {
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+
+    #btn-filter {
+        @include FlexCenter;
+        width: 25%;
+        margin: 2rem auto;
+        @include Gradient;
+
+        button {
+            outline: none;
+            border: none;
+            color: white;
+            transition: .2s;
+        }
+
+        button:hover {
+            border-radius: 10px;
+            transform: scale(1.1);
+            transition: .3s;
+        }
+
+    }
+
+    #card {
+        width: 80%;
+        margin: auto;
+
+        .card {
+            background-color: $second-color;
+            color: white;
+            width: 20rem;
+            transition: .2s;
+            box-shadow: 3px 10px 10px $second-color;
+            padding: 3rem 1rem;
+        }
+
+        .card:hover {
+            border: solid $third-color;
+            transition: .2s;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        #desc {
+            font-size: .9rem;
+            padding: 2rem 0;
+            width: 90%;
+        }
+
+        #emoji {
+            padding: 1rem 0;
+        }
+
+        a {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            @include Gradient;
+            border: none;
+            margin: 1rem auto;
+        }
+
+        #preview {
+            width: 100%;
+        }
+    }
+}
