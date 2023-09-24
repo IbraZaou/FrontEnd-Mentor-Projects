@@ -3,6 +3,10 @@
 /*<i class="fa-brands fa-html5 fa-xl"></i>
 <i class="fa-brands fa-css3-alt fa-xl"></i>
 <i class="fa-brands fa-js fa-xl"></i>
+<i class="fa-brands fa-shopify fa-xl"></i>
+<i class="fa-brands fa-wordpress fa-xl"></i>
+<i class="fa-brands fa-php fa-xl"></i>
+
 
 */
 const data = [
@@ -21,7 +25,7 @@ const data = [
     {
         id: 2,
         image: require('../assets/img/preview2.jpg'),
-        imageLink: 'https://eloquent-torrone-272fc2.netlify.app',
+        imageLink: 'https://650ff7f2fc0bfc3c20b8acf8--beautiful-pika-d8b0a0.netlify.app',
         description: 'Short app using an API to fecth currency and flags to convert any currency',
         title: '#2 - CONVERTISSEUR DEVISE',
         technologie: <>
@@ -41,6 +45,54 @@ const data = [
         </>,
         difficulty: '😶',
         githubLink: 'https://github.com/IbraZaou/Lofi-Music-Player',
+    },
+    {
+        id: 4,
+        image: require('../assets/img/preview4.jpg'),
+        imageLink: 'https://grand-lokum-b8ad53.netlify.app',
+        description: 'Todo Application',
+        title: '#4 - TODO APP',
+        technologie: <>
+            <i className="fa-brands fa-html5 fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i>
+        </>,
+        difficulty: '😄',
+        githubLink: 'https://github.com/IbraZaou/todoapp',
+    },
+    {
+        id: 5,
+        image: require('../assets/img/preview5.jpg'),
+        imageLink: 'https://onestoreorient.com/',
+        description: 'Boutique Islamique par excellence OneStoreOrient',
+        title: '#5 - ONE STORE ORIENT',
+        technologie: <>
+            <i class="fa-brands fa-shopify fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i>
+        </>,
+        difficulty: '😄',
+        githubLink: 'https://onestoreorient.com/',
+    },
+    {
+        id: 6,
+        image: require('../assets/img/preview6.jpg'),
+        imageLink: 'https://www.chessy69.fr',
+        description: 'Projet de groupe en stage en développeur web et web mobile avec RougeVert Communication',
+        title: '#6 - MAIRIE DE CHESSY-LES-MINES',
+        technologie: <>
+            <i class="fa-brands fa-wordpress fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i> - <i class="fa-brands fa-php fa-xl"></i>
+        </>,
+        difficulty: '😭',
+        githubLink: 'https://www.chessy69.fr',
+    },
+    {
+        id: 7,
+        image: require('../assets/img/preview7.jpg'),
+        imageLink: 'https://www.atletics-coachings.fr/',
+        description: 'Atletics Coachings est un site vitrine du coach Alexis Gerbe',
+        title: '#7 - ATLETICS COACHINGS',
+        technologie: <>
+            <i class="fa-brands fa-wordpress fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i>
+        </>,
+        difficulty: '😄',
+        githubLink: 'https://www.atletics-coachings.fr/',
     },
 ];
 

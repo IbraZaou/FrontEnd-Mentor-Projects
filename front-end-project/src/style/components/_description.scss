@@ -1,0 +1,63 @@
+@import '../variable.scss';
+
+.description {
+    height: 80vh;
+    background-color: $second-color;
+
+    .wrapper-description {
+        @include FlexSpaceAround;
+        width: 90%;
+        margin: auto;
+        height: 70vh;
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+        }
+
+        button {
+            margin-top: 2rem;
+            @include Gradient;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            padding: .3rem 2rem;
+            transition: .5s;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 10px $third-color;
+            transition: .5s;
+        }
+
+        .container-photo {
+            border: solid $third-color;
+            box-shadow: 0px 0px 100px $third-color;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            @include FlexCenter;
+            border-radius: 100px;
+            position: relative;
+            z-index: 1;
+            transition: 1s;
+
+
+            img {
+                width: 35rem;
+            }
+        }
+
+        .container-photo:hover {
+            box-shadow: 0px 0px 100px burlywood;
+            border: solid burlywood;
+            transition: 1s;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 4rem 0;
+    }
+
+}

@@ -47,6 +47,7 @@ function Project() {
                             <p id='desc' className="card-text">{project.description}</p>
                             <p className="card-text">{project.technologie}</p>
                             <p id='emoji' className="card-text">Ressenti : {project.difficulty}</p>
+                            <p className="card-text">Status : {project.status}</p>
                         </div>
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn">
                             Code Source <i class="fa-brands fa-github-alt"></i>
