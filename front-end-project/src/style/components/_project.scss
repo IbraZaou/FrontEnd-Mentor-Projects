@@ -34,6 +34,7 @@
     #card {
         width: 80%;
         margin: auto;
+        padding: 5rem 0;
 
         .card {
             background-color: $second-color;
@@ -74,6 +75,42 @@
 
         #preview {
             width: 100%;
+            border-radius: 30px;
+
+            img {
+                border-radius: 20px;
+            }
         }
+    }
+
+    .show-btn {
+        text-align: center;
+
+        button {
+            @include Gradient;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            padding: .3rem 2rem;
+            transition: .5s;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 10px $third-color;
+            transition: .5s;
+        }
+    }
+}
+
+
+//Media Q
+
+@media screen and (max-width: $mobile-width) {
+    .container_project {
+
+        .card {
+            width: 100% !important;
+        }
+
     }
 }

@@ -22,7 +22,7 @@ const Description = () => {
 
             <div className="wrapper-description">
                 <div className="description-text">
-                    <h1>Hello ! <br /> Je suis Ibra <span>Développeur Web Front-End</span></h1>
+                    <h1>Hello ! <br /> Je suis Ibra <span>Développeur Web</span></h1>
                     <p>Développeur Web passionné <br /> En quête de nouvelles opportunités et de défis</p>
 
                     <button>

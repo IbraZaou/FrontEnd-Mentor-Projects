@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Project from './components/Project';
 import Description from './components/Description';
 import Footer from './components/Footer';
+import FormTemplate from './components/FormTemplate';
+import Slider from './components/Slider';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <Description />
       <Project />
+      <Slider />
+      <FormTemplate />
       <Footer />
     </div>
   );

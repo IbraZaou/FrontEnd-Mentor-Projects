@@ -6,6 +6,8 @@
 <i class="fa-brands fa-shopify fa-xl"></i>
 <i class="fa-brands fa-wordpress fa-xl"></i>
 <i class="fa-brands fa-php fa-xl"></i>
+<i class="fa-brands fa-sass fa-xl"></i>
+<i class="fa-solid fa-database fa-xl"></i>
 
 
 */
@@ -93,6 +95,42 @@ const data = [
         </>,
         difficulty: '😄',
         githubLink: 'https://www.atletics-coachings.fr/',
+    },
+    {
+        id: 8,
+        image: require('../assets/img/preview8.jpg'),
+        imageLink: 'https://github.com/IbraZaou/projet_gamestore',
+        description: 'Gamestore est le projet final rendu pour la formation DWWM (développeur web et web mobile), boutique en ligne de composant pour joueurs PC et accessoires.',
+        title: '#8 - GAMESTORE',
+        technologie: <>
+            <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-sass fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i> - <i class="fa-brands fa-php fa-xl"></i> - <i class="fa-solid fa-database fa-xl"></i> MySQL
+        </>,
+        difficulty: '😭',
+        githubLink: 'https://github.com/IbraZaou/projet_gamestore',
+    },
+    {
+        id: 9,
+        image: require('../assets/img/preview9.jpg'),
+        imageLink: 'https://github.com/IbraZaou/trading',
+        description: 'Site vitrine de trading avec implémentation de Paypal pour les packs de formation.',
+        title: '#9 - SKF - TRADING',
+        technologie: <>
+            <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i> - <i class="fa-brands fa-php fa-xl"></i>
+        </>,
+        difficulty: '😄',
+        githubLink: 'https://github.com/IbraZaou/trading',
+    },
+    {
+        id: 10,
+        image: require('../assets/img/preview10.jpg'),
+        imageLink: 'https://github.com/IbraZaou/commande-chocolat',
+        description: 'Simple formulaire de commande de chocolat en php',
+        title: '#10 - COMMANDE CHOCOLAT',
+        technologie: <>
+            <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-php fa-xl"></i>
+        </>,
+        difficulty: '😄',
+        githubLink: 'https://github.com/IbraZaou/commande-chocolat',
     },
 ];
 

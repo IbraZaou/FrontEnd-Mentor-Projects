@@ -9,5 +9,19 @@
     img {
         width: 15rem;
         margin: 0;
+        transition: 1s;
+    }
+}
+
+
+//Media Q
+
+@media screen and (max-width: $tablet-width) {
+    .nav {
+        img {
+            width: 10rem !important;
+            transition: 1s;
+        }
+
     }
 }

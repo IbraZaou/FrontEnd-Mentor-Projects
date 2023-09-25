@@ -1,0 +1,113 @@
+@import '../variable.scss';
+
+.form {
+    background-color: $first-color;
+    color: white;
+    height: 100vh;
+    @include FlexCenter;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    form {
+        width: 50%;
+        margin: auto;
+        border-radius: 20px;
+        @include Gradient;
+        @include FlexCenter;
+        flex-direction: column;
+        padding: 4rem;
+
+        .icon-form {
+            margin: 2rem 0;
+            @include FlexSpaceBetween;
+            width: 20%;
+
+            i:hover {
+                transform: scale(1.1);
+            }
+
+        }
+
+
+        .form-inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 70%;
+
+            input,
+            textarea {
+                border-radius: 10px;
+                border: none;
+                width: 100%;
+                padding: .5rem 1rem;
+                resize: none;
+                outline: none;
+                margin-bottom: 2rem;
+            }
+
+            textarea {
+                height: 170px;
+            }
+
+            input[type="submit"] {
+                width: 30%;
+                margin-top: 1rem;
+                background-color: #fff;
+                color: #0A9CC6;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+}
+
+.success {
+    background-color: green;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.error {
+    background-color: red;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+// Media Q
+
+@media screen and (max-width: $desktop-width) {
+    .form {
+        form {
+            width: 80% !important;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .form {
+        form {
+            width: 90% !important;
+
+            .form-inputs {
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile-width) {
+    .form {
+        form {
+
+            .icon-form {
+                width: 50%;
+            }
+        }
+    }
+}

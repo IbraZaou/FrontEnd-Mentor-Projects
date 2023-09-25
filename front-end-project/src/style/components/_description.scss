@@ -61,3 +61,29 @@
     }
 
 }
+
+
+@media screen and (max-width: $tablet-width) {
+
+    .description {
+        height: 100vh;
+        @include FlexCenter;
+
+
+        .wrapper-description {
+            flex-direction: column;
+
+
+            .container-photo {
+                //display: none !important;
+                height: 250px !important;
+                width: 250px !important;
+                margin-top: 5rem;
+
+                img {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+}
