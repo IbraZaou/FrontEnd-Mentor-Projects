@@ -108,6 +108,11 @@
             .icon-form {
                 width: 50%;
             }
+
+            input[type="submit"] {
+                width: 90% !important;
+                margin: auto;
+            }
         }
     }
 }

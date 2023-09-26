@@ -2,12 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import photo1 from '../assets/img/me.png'; // Import your first image
 import photo2 from '../assets/img/me2.jpg'; // Import your second image
+import CV from '../assets/files/CV_DEVELOPPEUR_WEB.pdf';
 
 
 
 const Description = () => {
 
     const [isHovered, setIsHovered] = useState(false);
+
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -26,7 +28,7 @@ const Description = () => {
                     <p>Développeur Web passionné <br /> En quête de nouvelles opportunités et de défis</p>
 
                     <button>
-                        <a href="" download="">CV <i class="fa-solid fa-download"></i> </a>
+                        <a href={CV} download>CV <i class="fa-solid fa-download"></i> </a>
                     </button>
                 </div>
 
