@@ -4,7 +4,6 @@
 
 .container_project {
     background-color: $first-color;
-    height: 167vh;
 
     h2 {
         text-align: center;
@@ -119,6 +118,7 @@
 
         .card {
             width: 100% !important;
+            height: 300px !important;
         }
 
     }
