@@ -7,6 +7,7 @@
 <i class="fa-brands fa-wordpress fa-xl"></i>
 <i class="fa-brands fa-php fa-xl"></i>
 <i class="fa-brands fa-sass fa-xl"></i>
+<i class="fa-brands fa-symfony fa-xl"></i>
 <i class="fa-solid fa-database fa-xl"></i>
 
 
@@ -131,6 +132,18 @@ const data = [
         </>,
         difficulty: '😄',
         githubLink: 'https://github.com/IbraZaou/commande-chocolat',
+    },
+    {
+        id: 11,
+        image: require('../assets/img/preview11.jpg'),
+        imageLink: 'https://github.com/IbraZaou/SymRecipe',
+        description: "SymRecipe est une application permettant de créer des recettes à base d'ingrédients que vous aurez vous-mêmes créer. Vous pourrez partager les recettes à la communauté du site ou bine les garder en privées.",
+        title: '#11 - SYMRECIPE',
+        technologie: <>
+            <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-sass fa-xl"></i> - <i class="fa-brands fa-symfony fa-xl"></i> - <i class="fa-solid fa-database fa-xl"></i> MySQL
+        </>,
+        difficulty: '😭',
+        githubLink: 'https://github.com/IbraZaou/SymRecipe',
     },
 ];
 
