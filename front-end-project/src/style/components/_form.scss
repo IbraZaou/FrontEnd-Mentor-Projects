@@ -56,6 +56,14 @@
                 background-color: #fff;
                 color: #0A9CC6;
                 font-weight: bold;
+                transition: .2s;
+
+            }
+
+            input[type="submit"]:hover {
+                transition: .5s;
+                border-radius: 50px;
+
             }
 
         }

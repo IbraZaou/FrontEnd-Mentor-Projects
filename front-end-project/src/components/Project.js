@@ -23,7 +23,7 @@ function Project() {
     const projectsToShow = showAllProjects ? filteredProjects : filteredProjects.slice(0, 8);
 
     return (
-        <div className='container_project'>
+        <div id="container_project" className='container_project'>
             <h2>Projets</h2>
 
             <div id='btn-filter' className="btn-group mb-4">

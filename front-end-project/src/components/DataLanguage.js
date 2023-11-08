@@ -23,7 +23,7 @@ const dataLanguage = [
     {
         id: 2,
         image: require('../assets/icon/css.png'),
-        imageLink: 'https://developer.mozilla.org/fr/docs/Web/HTML',
+        imageLink: 'https://developer.mozilla.org/fr/docs/Web/CSS',
         techno: 'frontend'
     },
     {
