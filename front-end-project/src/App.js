@@ -4,15 +4,15 @@ import Project from './components/Project';
 import Description from './components/Description';
 import Footer from './components/Footer';
 import FormTemplate from './components/FormTemplate';
-import Slider from './components/Slider';
+import Techno from './components/Techno';
 
 function App() {
   return (
     <div>
       <Navbar />
       <Description />
+      <Techno />
       <Project />
-      <Slider />
       <FormTemplate />
       <Footer />
     </div>

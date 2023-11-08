@@ -1,7 +1,7 @@
 // Section1.js
 
 import React, { useState } from 'react';
-import data from './Data';
+import data from './DataProject';
 
 function Project() {
     const [selectedDifficulty, setSelectedDifficulty] = useState('All');

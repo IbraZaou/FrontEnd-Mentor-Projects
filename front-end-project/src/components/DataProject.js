@@ -12,7 +12,7 @@
 
 
 */
-const data = [
+const dataProject = [
     {
         id: 1,
         image: require('../assets/img/desktop-design.jpg'),
@@ -147,4 +147,4 @@ const data = [
     },
 ];
 
-export default data;
+export default dataProject;

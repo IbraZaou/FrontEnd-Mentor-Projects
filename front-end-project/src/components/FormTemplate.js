@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const FormTemplate = () => {
@@ -33,6 +33,18 @@ export const FormTemplate = () => {
             });
     };
 
+    const [message, setMessage] = useState('');
+
+            const handleSubmit = (e) => {
+                e.preventDefault();
+                // Your form submission logic here
+                setMessage('Votre message à bien été envoyé !');
+            };
+
+            const handleDismiss = () => {
+                setMessage('');
+              };
+
     return (
         <div className="form">
 
@@ -55,12 +67,18 @@ export const FormTemplate = () => {
                 </div>
 
                 <div className="form-inputs">
+
+                    
+                {message && <p onClick={handleDismiss} className="success">
+                    {message}
+                </p>}
+                    
                     <input type="text" name="name" required autoComplete='off' placeholder='Nom Prénom' />
 
                     <input type="email" name="email" required autoComplete='off' placeholder='Email' />
 
                     <textarea name="message" required placeholder='Hello World ...' />
-                    <input type="submit" value="Envoyer" />
+                    <input type="submit" onClick={handleSubmit} value="Envoyer" />
                 </div>
             </form>
 
