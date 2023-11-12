@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 import data from './DataProject';
 
 function Project() {
-    const [selectedDifficulty, setSelectedDifficulty] = useState('All');
+    const [selectedMain, setSelectedMain] = useState('All');
     const [showAllProjects, setShowAllProjects] = useState(false);
 
-    const handleDifficultyFilter = (difficulty) => {
-        setSelectedDifficulty(difficulty);
+    const handleMainFilter = (main) => {
+        setSelectedMain(main);
         setShowAllProjects(false);
     };
 
     const filteredProjects = data.filter((project) => {
-        if (selectedDifficulty === 'All') {
+        if (selectedMain === 'All') {
             return true;
         } else {
-            return project.difficulty === selectedDifficulty;
+            return project.main === selectedMain;
         }
     });
 
@@ -27,30 +27,54 @@ function Project() {
             <h2>Projets</h2>
 
             <div id='btn-filter' className="btn-group mb-4">
-                <button className={`btn ${selectedDifficulty === 'All' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleDifficultyFilter('All')}>
+                {/* TOUT */}
+                <button className={`btn ${selectedMain === 'All' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('All')}>
                     Tout
                 </button>
-                <button className={`btn ${selectedDifficulty === '😄' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleDifficultyFilter('😄')}>
-                    😄
+
+                {/* JAVASCRIPT */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-js fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-js fa-xl"></i>')}>
+                    <i class="fa-brands fa-js fa-xl"></i>
                 </button>
-                <button className={`btn ${selectedDifficulty === '😶' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleDifficultyFilter('😶')}>
-                    😶
+
+                {/* PHP */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-php fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-php fa-xl"></i>')}>
+                    <i class="fa-brands fa-php fa-xl"></i>
                 </button>
-                <button className={`btn ${selectedDifficulty === '😭' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleDifficultyFilter('😭')}>
-                    😭
+
+                {/* SYMFONY */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-symfony fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-symfony fa-xl"></i>')}>
+                    <i class="fa-brands fa-symfony fa-xl"></i>
                 </button>
+
+                {/* JAVA */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-java fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-java fa-xl"></i>')}>
+                    <i class="fa-brands fa-java fa-xl"></i>
+                </button>
+
+                {/* WORDPRESS */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-wordpress fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-wordpress fa-xl"></i>')}>
+                    <i class="fa-brands fa-wordpress fa-xl"></i>
+                </button>
+
+                {/* SHOPIFY */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-shopify fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-shopify fa-xl"></i>')}>
+                    <i class="fa-brands fa-shopify fa-xl"></i>
+                </button>
+
             </div>
 
             <div id="card" className="d-flex justify-content-center flex-wrap">
                 {projectsToShow.map((project) => (
                     <div key={project.id} className="card mb-4 me-4">
-                        <a id='preview' href={project.imageLink}>
+                        <h5 className="card-title">{project.title}</h5>
+                        <a id='preview' target='blank' href={project.imageLink}>
                             <img src={project.image} className="card-img-top" alt={project.title} /></a>
                         <div className="card-body">
-                            <h5 className="card-title">{project.title}</h5>
+                            <i id='arrow' class="fa-solid fa-arrow-down"></i>
                             <p id='desc' className="card-text">{project.description}</p>
                             <p className="card-text">{project.technologie}</p>
-                            <p id='emoji' className="card-text">Ressenti : {project.difficulty}</p>
+                            <p id='emoji' className="card-text">Ressenti : {project.feeling}</p>
                         </div>
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn">
                             Code Source <i class="fa-brands fa-github-alt"></i>

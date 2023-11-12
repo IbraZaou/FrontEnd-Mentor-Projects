@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import photo1 from '../assets/img/me.png'; // Import your first image
 import photo2 from '../assets/img/me2.jpg'; // Import your second image
-import CV from '../assets/files/CV_DEVELOPPEUR_WEB.pdf';
+import CV from '../assets/files/cv_developpeur_web.jpg';
 
 
 

@@ -43,7 +43,7 @@ function Techno() {
 
             <div className="d-flex justify-content-center flex-wrap container_techno">
                 {technoToShow.map((techno) => (
-                    <a id='previewTechno' href={techno.imageLink}>
+                    <a id='previewTechno' target='blank' href={techno.imageLink}>
                         <p>{techno.title}</p>
                         <img src={techno.image} alt={techno.title} />
                         <p id='hidden'>{techno.techno}</p>
