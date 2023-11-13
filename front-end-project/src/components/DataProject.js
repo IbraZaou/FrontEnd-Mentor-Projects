@@ -135,7 +135,7 @@ const dataProject = [
         id: 11,
         image: require('../assets/img/preview11.jpg'),
         imageLink: 'https://github.com/IbraZaou/SymRecipe',
-        description: "SymRecipe est une application permettant de créer des recettes à base d'ingrédients que vous aurez vous-mêmes créer. Vous pourrez partager les recettes à la communauté du site ou bien les garder en privées.",
+        description: "SymRecipe est une application permettant de créer des recettes. Vous pourrez partager les recettes à la communauté du site ou bien les garder en privées.",
         title: 'SYMRECIPE',
         technologie: <>
             <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-sass fa-xl"></i> - <i class="fa-brands fa-symfony fa-xl"></i> - <i class="fa-solid fa-database fa-xl"></i> MySQL
@@ -148,7 +148,7 @@ const dataProject = [
         id: 11,
         image: require('../assets/img/preview12.jpg'),
         imageLink: 'https://github.com/IbraZaou/gif',
-        description: "Calendrier gif est un projet de groupe crée en Java, il permet a un utilisateur de s'authentifier et de téleverser ou placer via un url différent gif coutant des points, les utilisateurs pauvent aussi réagir aux gifs.",
+        description: "Calendrier gif est un projet de groupe, il permet a un utilisateur de s'authentifier placer via un url des gifs, les utilisateurs peuvent aussi réagir aux gifs.",
         title: 'CALENDRIER GIF',
         technologie: <>
             <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-java fa-xl"></i> - <i class="fa-solid fa-database fa-xl"></i> H2
