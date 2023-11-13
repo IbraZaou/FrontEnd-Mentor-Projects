@@ -10,6 +10,7 @@
 <i class="fa-brands fa-symfony fa-xl"></i>
 <i class="fa-solid fa-database fa-xl"></i>
 <i class="fa-brands fa-java fa-xl"></i>
+<i class="fa-brands fa-react fa-xl"></i>
 
 
 */
@@ -145,7 +146,7 @@ const dataProject = [
         githubLink: 'https://github.com/IbraZaou/SymRecipe',
     },
     {
-        id: 11,
+        id: 12,
         image: require('../assets/img/preview12.jpg'),
         imageLink: 'https://github.com/IbraZaou/gif',
         description: "Calendrier gif est un projet de groupe, il permet a un utilisateur de s'authentifier placer via un url des gifs, les utilisateurs peuvent aussi réagir aux gifs.",
@@ -156,6 +157,19 @@ const dataProject = [
         main: '<i class="fa-brands fa-java fa-xl"></i>',
         feeling: '😶',
         githubLink: 'https://github.com/IbraZaou/gif',
+    },
+    {
+        id: 13,
+        image: require('../assets/img/preview13.jpg'),
+        imageLink: 'https://65528beada539a24533038ed--extraordinary-frangollo-34f3ff.netlify.app',
+        description: "Application regroupant les films via une API, l'utilisateur peut ajouter des films dans un pages favoris",
+        title: 'REACT MOVIES',
+        technologie: <>
+            <i class="fa-brands fa-html5 fa-xl"></i> - <i class="fa-brands fa-sass fa-xl"></i> - <i class="fa-brands fa-react fa-xl"></i>
+        </>,
+        main: '<i class="fa-brands fa-react fa-xl"></i>',
+        feeling: '😄',
+        githubLink: 'https://github.com/IbraZaou/cinema',
     },
 ];
 

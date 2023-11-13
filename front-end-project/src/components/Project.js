@@ -37,6 +37,11 @@ function Project() {
                     <i class="fa-brands fa-js fa-xl"></i>
                 </button>
 
+                {/* REACT */}
+                <button className={`btn ${selectedMain === '<i class="fa-brands fa-react fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-react fa-xl"></i>')}>
+                    <i class="fa-brands fa-react fa-xl"></i>
+                </button>
+
                 {/* PHP */}
                 <button className={`btn ${selectedMain === '<i class="fa-brands fa-php fa-xl"></i>' ? 'btn-primary' : 'btn-outline-primary'}`} onClick={() => handleMainFilter('<i class="fa-brands fa-php fa-xl"></i>')}>
                     <i class="fa-brands fa-php fa-xl"></i>
