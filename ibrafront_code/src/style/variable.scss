@@ -1,0 +1,41 @@
+//Flex
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin FlexSpaceAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin FlexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//Colors
+
+$first-color: #343434;
+$second-color: #1F1F1F;
+$third-color: #00C4F0;
+$fourth-color: #2A2A2A;
+
+@mixin Gradient {
+    background: linear-gradient(269.9deg, #00C4F0 -10.18%, #0168AE 108.41%);
+}
+
+@mixin GradientText {
+    background: linear-gradient(90deg, #00C4F0 0%, #0266C2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+}
+
+// Media Queries 
+$mobile-width: 768px;
+$tablet-width: 1024px;
+$desktop-width: 1280px;
