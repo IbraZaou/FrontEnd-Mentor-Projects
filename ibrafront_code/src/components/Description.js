@@ -1,23 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
 import photo1 from '../assets/img/me.png'; // Import your first image
-import photo2 from '../assets/img/me2.jpg'; // Import your second image
 import CV from '../assets/files/cv_developpeur_web.png';
 
 
 
 const Description = () => {
-
-    const [isHovered, setIsHovered] = useState(false);
-
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
 
     const scrollDown = () => {
         window.scrollTo({
@@ -40,10 +27,8 @@ const Description = () => {
                 </div>
 
                 <div
-                    className={`container-photo ${isHovered ? 'hovered' : ''}`}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img src={isHovered ? photo2 : photo1} alt="" />
+                    className="container-photo">
+                    <img src={photo1} alt="" />
                 </div>
 
             </div>

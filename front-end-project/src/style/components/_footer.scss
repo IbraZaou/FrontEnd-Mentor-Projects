@@ -1,7 +1,0 @@
-@import "../variable.scss";
-
-.footer {
-    height: 10vh;
-    background-color: $second-color;
-    @include FlexCenter;
-}
