@@ -51,9 +51,15 @@ const dataLanguage = [
         techno: 'frontend'
     },
     {
-        id: 5,
+        id: 6,
         image: require('../assets/icon/vue.png'),
         imageLink: 'https://vuejs.org/',
+        techno: 'frontend'
+    },
+    {
+        id: 7,
+        image: require('../assets/icon/tailwind.png'),
+        imageLink: 'https://tailwindcss.com',
         techno: 'frontend'
     },
     //BACKEND
@@ -92,6 +98,18 @@ const dataLanguage = [
         id: 17,
         image: require('../assets/icon/spring.png'),
         imageLink: 'https://spring.io',
+        techno: 'backend'
+    },
+    {
+        id: 18,
+        image: require('../assets/icon/mongodb.png'),
+        imageLink: 'https://www.mongodb.com/',
+        techno: 'backend'
+    },
+    {
+        id: 19,
+        image: require('../assets/icon/nodejs.png'),
+        imageLink: 'https://nodejs.org/en',
         techno: 'backend'
     },
 

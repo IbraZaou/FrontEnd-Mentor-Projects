@@ -21,6 +21,15 @@
             @include FlexSpaceBetween;
             width: 20%;
 
+            img {
+                width: 2rem;
+                border-radius: 100px;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+
             i:hover {
                 transform: scale(1.1);
             }

@@ -29,32 +29,6 @@ const dataProject = [
         githubLink: 'https://github.com/IbraZaou/convertisseur_devise',
     },
     {
-        id: 3,
-        image: require('../assets/img/preview3.jpg'),
-        imageLink: 'https://650f0fa7e7943d47ebe2d556--tubular-monstera-9cab12.netlify.app',
-        description: 'Music Player Lofi',
-        title: 'LOFI MUSIC PLAYER',
-        technologie: <>
-            <i className="fa-brands fa-html5 fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i>
-        </>,
-        main: '<i class="fa-brands fa-js fa-xl"></i>',
-        feeling: '😄',
-        githubLink: 'https://github.com/IbraZaou/Lofi-Music-Player',
-    },
-    {
-        id: 4,
-        image: require('../assets/img/preview4.jpg'),
-        imageLink: 'https://grand-lokum-b8ad53.netlify.app',
-        description: 'Application de gestion de tâches',
-        title: 'TODO APP',
-        technologie: <>
-            <i className="fa-brands fa-html5 fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i>
-        </>,
-        main: '<i class="fa-brands fa-js fa-xl"></i>',
-        feeling: '😄',
-        githubLink: 'https://github.com/IbraZaou/todoapp',
-    },
-    {
         id: 5,
         image: require('../assets/img/preview5.jpg'),
         imageLink: 'https://onestoreorient.com/',
@@ -170,6 +144,19 @@ const dataProject = [
         main: '<i class="fa-brands fa-react fa-xl"></i>',
         feeling: '😄',
         githubLink: 'https://github.com/IbraZaou/cinema',
+    },
+    {
+        id: 14,
+        image: require('../assets/img/preview14.png'),
+        imageLink: 'https://github.com/IbraZaou/booking-airbnc',
+        description: "Application regroupant les films via une API, l'utilisateur peut ajouter des films dans un pages favoris",
+        title: 'AIRBNC',
+        technologie: <>
+            MERN Stack
+        </>,
+        main: '<i class="fa-brands fa-react fa-xl"></i>',
+        feeling: '😶',
+        githubLink: 'https://github.com/IbraZaou/booking-airbnc',
     },
 ];
 

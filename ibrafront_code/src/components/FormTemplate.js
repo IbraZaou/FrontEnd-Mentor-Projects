@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import FF from '../assets/icon/frontendmentor.png';
 
 export const FormTemplate = () => {
     const form = useRef();
@@ -35,15 +36,15 @@ export const FormTemplate = () => {
 
     const [message, setMessage] = useState('');
 
-            const handleSubmit = (e) => {
-                e.preventDefault();
-                // Your form submission logic here
-                setMessage('Votre message à bien été envoyé !');
-            };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Your form submission logic here
+        setMessage('Votre message à bien été envoyé !');
+    };
 
-            const handleDismiss = () => {
-                setMessage('');
-              };
+    const handleDismiss = () => {
+        setMessage('');
+    };
 
     return (
         <div className="form">
@@ -57,22 +58,26 @@ export const FormTemplate = () => {
                 <h2>Discutons ensemble !</h2>
 
                 <div className="icon-form">
-                    <a href="https://github.com/IbraZaou">
+                    <a href="https://github.com/IbraZaou" target='_blank'>
                         <i class="fa-brands fa-github fa-2xl"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/ibrazaou/">
+                    <a target='_blank' className='ff' href="https://www.frontendmentor.io/profile/IbraZaou">
+                        <img src={FF} alt="" />
+                    </a>
+
+                    <a target='_blank' href="https://www.linkedin.com/in/ibrazaou/">
                         <i class="fa-brands fa-linkedin fa-2xl"></i>
                     </a>
                 </div>
 
                 <div className="form-inputs">
 
-                    
-                {message && <p onClick={handleDismiss} className="success">
-                    {message}
-                </p>}
-                    
+
+                    {message && <p onClick={handleDismiss} className="success">
+                        {message}
+                    </p>}
+
                     <input type="text" name="name" required autoComplete='off' placeholder='Nom Prénom' />
 
                     <input type="email" name="email" required autoComplete='off' placeholder='Email' />
