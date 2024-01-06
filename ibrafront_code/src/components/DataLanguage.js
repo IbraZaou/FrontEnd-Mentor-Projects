@@ -33,12 +33,6 @@ const dataLanguage = [
         techno: 'frontend'
     },
     {
-        id: 3,
-        image: require('../assets/icon/bootstrap.png'),
-        imageLink: 'https://getbootstrap.com/',
-        techno: 'frontend'
-    },
-    {
         id: 4,
         image: require('../assets/icon/js.png'),
         imageLink: 'https://developer.mozilla.org/fr/docs/Web/JavaScript',
@@ -77,27 +71,9 @@ const dataLanguage = [
         techno: 'backend'
     },
     {
-        id: 8,
-        image: require('../assets/icon/laravel.png'),
-        imageLink: 'https://laravel.com/',
-        techno: 'backend'
-    },
-    {
         id: 9,
         image: require('../assets/icon/mysql.png'),
         imageLink: 'https://www.mysql.com/fr/',
-        techno: 'backend'
-    },
-    {
-        id: 10,
-        image: require('../assets/icon/java.png'),
-        imageLink: 'https://www.java.com/fr/',
-        techno: 'backend'
-    },
-    {
-        id: 17,
-        image: require('../assets/icon/spring.png'),
-        imageLink: 'https://spring.io',
         techno: 'backend'
     },
     {
