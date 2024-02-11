@@ -158,6 +158,19 @@ const dataProject = [
         feeling: '😶',
         githubLink: 'https://github.com/IbraZaou/booking-airbnc',
     },
+    {
+        id: 7,
+        image: require('../assets/img/preview15.jpg'),
+        imageLink: 'https://previlience.fr/',
+        description: 'Site vitrine de la société Previlience',
+        title: 'PREVILIENCE',
+        technologie: <>
+            <i class="fa-brands fa-wordpress fa-xl"></i> - <i className="fa-brands fa-css3-alt fa-xl"></i> - <i class="fa-brands fa-js fa-xl"></i>
+        </>,
+        main: '<i class="fa-brands fa-wordpress fa-xl"></i>',
+        feeling: '😄',
+        githubLink: 'https://previlience.fr/',
+    },
 ];
 
 export default dataProject;

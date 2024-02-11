@@ -1,22 +1,23 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
-import Project from './components/Project';
-import Description from './components/Description';
 import Footer from './components/Footer';
-import FormTemplate from './components/FormTemplate';
-import Techno from './components/Techno';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Client from './pages/Client';
+import Entreprise from './pages/Entreprise';
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Description />
-      <Techno />
-      <Project />
-      <FormTemplate />
-      <Footer />
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<div>
+				<Navbar />
+				<Routes>
+					<Route path="/client" element={<Client />} />
+					<Route path="/entreprise" element={<Entreprise />} />
+				</Routes>
+				<Footer />
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;

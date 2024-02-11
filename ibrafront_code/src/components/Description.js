@@ -14,7 +14,7 @@ const Description = () => {
     };
 
     return (
-        <div className='description'>
+        <div className='description client'>
 
             <div className="wrapper-description">
                 <div className="description-text">

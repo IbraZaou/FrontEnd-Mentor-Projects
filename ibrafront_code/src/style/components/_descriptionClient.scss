@@ -1,11 +1,11 @@
 @import '../variable.scss';
 
-.description {
+.description-client {
     height: 80vh;
-    background-color: $entreprise-color;
+    background-color: $client-color;
 
     .fa-arrow-down {
-        color: white;
+        color: black;
         display: flex;
         justify-content: center;
         width: 100px;
@@ -16,19 +16,29 @@
     }
 
     .wrapper-description {
-        @include FlexSpaceAround;
+        @include FlexSpaceAroundReverse;
         width: 90%;
         margin: auto;
         height: 70vh;
 
+        h1 {
+            color: black;
+
+            span {
+                color: black;
+
+            }
+        }
+
         p {
             margin-top: 2rem;
             font-size: 1.4rem;
+            color: black;
         }
 
         button {
             margin-top: 2rem;
-            @include Gradient;
+            @include GradientClient;
             border: none;
             border-radius: 10px;
             font-size: 1.5rem;
@@ -37,13 +47,13 @@
         }
 
         button:hover {
-            box-shadow: 0px 0px 10px $third-color;
+            box-shadow: 0px 0px 10px $entreprise-color;
             transition: .5s;
         }
 
         .container-photo {
-            border: solid $third-color;
-            box-shadow: 0px 0px 100px $third-color;
+            border: solid $entreprise-color;
+            box-shadow: 0px 0px 100px $entreprise-color;
             width: 500px;
             height: 500px;
             overflow: hidden;
@@ -69,6 +79,7 @@
     h2 {
         text-align: center;
         margin: 4rem 0;
+        color: black;
     }
 
 }

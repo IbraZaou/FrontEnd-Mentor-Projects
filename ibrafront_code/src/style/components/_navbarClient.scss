@@ -4,7 +4,7 @@
 .nav {
     @include FlexSpaceBetween;
     padding: .4rem 5rem;
-    background-color: $entreprise-color;
+    border-radius: 0 0 10px 10px;
 
     img {
         width: 10rem;

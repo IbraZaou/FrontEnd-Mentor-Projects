@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+@mixin FlexSpaceAroundReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @mixin FlexSpaceBetween {
     display: flex;
     justify-content: space-between;
@@ -20,13 +27,20 @@
 //Colors
 
 $first-color: #343434;
-$second-color: #1F1F1F;
+$entreprise-color: #1F1F1F;
 $third-color: #00C4F0;
 $fourth-color: #2A2A2A;
+$client-color: #fff;
 
 @mixin Gradient {
     background: linear-gradient(269.9deg, #00C4F0 -10.18%, #0168AE 108.41%);
 }
+
+
+@mixin GradientClient {
+    background: linear-gradient(269.9deg, #000000 -10.18%, #8b8b8b 108.41%);
+}
+
 
 @mixin GradientText {
     background: linear-gradient(90deg, #00C4F0 0%, #0266C2 100%);
@@ -34,6 +48,14 @@ $fourth-color: #2A2A2A;
     -webkit-background-clip: text;
     text-fill-color: transparent;
 }
+
+@mixin GradientTextClient {
+    background: linear-gradient(90deg, #000000 0%, #8b8b8b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+}
+
 
 // Media Queries 
 $mobile-width: 768px;

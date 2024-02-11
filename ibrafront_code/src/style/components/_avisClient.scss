@@ -1,0 +1,13 @@
+@import '../variable.scss';
+
+.avis {
+    h2 {
+        color: black;
+        text-align: center
+    }
+
+    .avis-client {
+        @include FlexCenter;
+        height: 50vh;
+    }
+}
