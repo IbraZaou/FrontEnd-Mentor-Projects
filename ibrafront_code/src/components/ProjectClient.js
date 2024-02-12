@@ -23,7 +23,7 @@ function ProjectClient() {
     const projectsToShow = showAllProjects ? filteredProjects : filteredProjects.slice(0, 8);
 
     return (
-        <div id="container_project" className='container_project'>
+        <div id="container_project" className='container_project_client'>
             <h2>Portofolio</h2>
 
             <div id="card" className="d-flex justify-content-center flex-wrap">
