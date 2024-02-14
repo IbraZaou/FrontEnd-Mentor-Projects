@@ -2,39 +2,26 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// import './styles.css';
-
-// import required modules
-import { Pagination } from 'swiper/modules';
-
 
 const AvisClient = () => {
 
     const reviews = [
         {
-            name: "John Doe",
-            company: "ABC Company",
-            message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis vel magna congue semper."
+            name: "Atletics Coachings",
+            message: "J'ai pu ressentir l'expertise et le professionnalisme d'Ibra dans son domaine au cours de cette expérience client. La qualité, la réactivité, le service et la disponibilitésont au top ! Super prestation !"
         },
         {
-            name: "Jane Smith",
-            company: "XYZ Corporation",
+            name: "OneStoreOrient",
             message: "Sed euismod, leo auctor sollicitudin fringilla, nisl elit convallis libero, eu venenatis turpis arcu ac libero."
         },
         {
-            name: "Jane Smith",
-            company: "XYZ Corporation",
+            name: "Previlience",
             message: "Sed euismod, leo auctor sollicitudin fringilla, nisl elit convallis libero, eu venenatis turpis arcu ac libero."
-        },
-        {
-            name: "Jane Smith",
-            company: "XYZ Corporation",
-            message: "Sed euismod, leo auctor sollicitudin fringilla, nisl elit convallis libero, eu venenatis turpis arcu ac libero."
-        },
+        }
     ];
 
 
@@ -46,6 +33,10 @@ const AvisClient = () => {
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
                     pagination={{
                         clickable: true,
                     }}
@@ -55,8 +46,7 @@ const AvisClient = () => {
                         <SwiperSlide key={index}>
                             <div className="review">
                                 <h3>{review.name}</h3>
-                                <p>{review.company}</p>
-                                <p>{review.message}</p>
+                                <p>" {review.message} "</p>
                             </div>
                         </SwiperSlide>
                     ))}

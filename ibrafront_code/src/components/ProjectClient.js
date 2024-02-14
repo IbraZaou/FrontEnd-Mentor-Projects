@@ -2,15 +2,12 @@
 
 import React, { useState } from 'react';
 import data from './DataProjectClient';
+import { Link } from 'react-router-dom';
+
 
 function ProjectClient() {
     const [selectedMain, setSelectedMain] = useState('All');
     const [showAllProjects, setShowAllProjects] = useState(false);
-
-    const handleMainFilter = (main) => {
-        setSelectedMain(main);
-        setShowAllProjects(false);
-    };
 
     const filteredProjects = data.filter((project) => {
         if (selectedMain === 'All') {
@@ -28,20 +25,18 @@ function ProjectClient() {
 
             <div id="card" className="d-flex justify-content-center flex-wrap">
                 {projectsToShow.map((project) => (
-                    <div key={project.id} className="card mb-4 me-4">
+                    <Link to={project.githubLink} key={project.id} className="card">
                         <h5 className="card-title">{project.title}</h5>
                         <a id='preview' target='blank' href={project.imageLink}>
                             <img src={project.image} className="card-img-top" alt={project.title} /></a>
                         <div className="card-body">
                             <i id='arrow' class="fa-solid fa-arrow-down"></i>
                             <p id='desc' className="card-text">{project.description}</p>
-                            <p className="card-text">{project.technologie}</p>
-                            <p id='emoji' className="card-text">Ressenti : {project.feeling}</p>
                         </div>
-                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn">
-                            Code Source <i class="fa-brands fa-github-alt"></i>
+                        <a href={project.githubLink} id='btn_visit' target="_blank" rel="noopener noreferrer" className="btn">
+                            Visiter le site
                         </a>
-                    </div>
+                    </Link>
                 ))}
             </div>
 

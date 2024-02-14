@@ -8,6 +8,14 @@
 
     .avis-client {
         @include FlexCenter;
-        height: 50vh;
+
+        .review {
+
+            p {
+                font-size: 1rem;
+                text-align: start;
+                margin-top: 2rem;
+            }
+        }
     }
 }

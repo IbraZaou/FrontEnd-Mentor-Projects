@@ -2,11 +2,12 @@
 
 
 .container_project_client {
-    background-color: $first-color;
+    // background-color: $first-color;
 
     h2 {
         text-align: center;
         padding: 4rem 0;
+        color: black;
     }
 
 
@@ -41,10 +42,12 @@
             color: white;
             width: 20rem;
             overflow: hidden;
-            height: 650px;
+            height: 550px;
             transition: .5s;
             box-shadow: 3px 10px 10px $entreprise-color;
             padding: 3rem 1rem;
+            margin: 1rem auto;
+
         }
 
         .card:hover {
@@ -66,13 +69,14 @@
             padding: 1rem 0;
         }
 
-        a {
+        #btn_visit {
             text-align: center;
             width: 50%;
             margin: auto;
-            @include Gradient;
+            @include GradientClient;
             border: none;
             margin: 1rem auto;
+            color: white;
         }
 
         #preview {
