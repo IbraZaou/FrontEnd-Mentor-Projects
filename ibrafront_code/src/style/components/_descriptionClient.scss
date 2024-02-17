@@ -5,7 +5,7 @@
     background-color: $client-color;
 
     .fa-arrow-down {
-        color: black;
+        color: white;
         display: flex;
         justify-content: center;
         width: 100px;
@@ -22,10 +22,10 @@
         height: 70vh;
 
         h1 {
-            color: black;
+            color: white;
 
             span {
-                color: black;
+                color: white;
 
             }
         }
@@ -33,7 +33,7 @@
         p {
             margin-top: 2rem;
             font-size: 1.4rem;
-            color: black;
+            color: white;
         }
 
         button {
@@ -44,7 +44,7 @@
             font-size: 1.5rem;
             padding: .3rem 2rem;
             transition: .5s;
-            color: white;
+            color: $fourth-color;
         }
 
         button:hover {
@@ -53,13 +53,13 @@
         }
 
         .container-photo {
-            border: solid $entreprise-color;
-            box-shadow: 0px 0px 100px $entreprise-color;
+            // border: solid #FFEA00;
+            box-shadow: 0px 0px 400px #ffea0078;
             width: 500px;
             height: 500px;
             overflow: hidden;
             @include FlexCenter;
-            border-radius: 100px;
+            border-radius: 100%;
             position: relative;
             z-index: 1;
             transition: 1s;

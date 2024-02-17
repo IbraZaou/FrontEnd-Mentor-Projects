@@ -1,8 +1,12 @@
 @import '../variable.scss';
 
 .avis {
+
+    background-color: $fourth-color;
+    padding: 4rem 0;
+
     h2 {
-        color: black;
+        color: white;
         text-align: center
     }
 

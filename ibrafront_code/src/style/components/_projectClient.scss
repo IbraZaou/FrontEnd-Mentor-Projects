@@ -2,12 +2,12 @@
 
 
 .container_project_client {
-    // background-color: $first-color;
+    background-color: $fourth-color;
 
     h2 {
         text-align: center;
         padding: 4rem 0;
-        color: black;
+        color: white;
     }
 
 
@@ -51,7 +51,7 @@
         }
 
         .card:hover {
-            border: solid white;
+            border: solid #FFEA00;
             transition: .5s;
         }
 
@@ -76,7 +76,7 @@
             @include GradientClient;
             border: none;
             margin: 1rem auto;
-            color: white;
+            color: $fourth-color;
         }
 
         #preview {

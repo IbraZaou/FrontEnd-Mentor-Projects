@@ -16,7 +16,7 @@ const AvisClient = () => {
         },
         {
             name: "OneStoreOrient",
-            message: "Sed euismod, leo auctor sollicitudin fringilla, nisl elit convallis libero, eu venenatis turpis arcu ac libero."
+            message: "Excellent service ! Très réactif et à l'écoute de mes besoins. Je recommande vivement pour la création de site web."
         },
         {
             name: "Previlience",

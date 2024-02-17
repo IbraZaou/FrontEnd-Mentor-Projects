@@ -30,7 +30,7 @@ $first-color: #343434;
 $entreprise-color: #1F1F1F;
 $third-color: #00C4F0;
 $fourth-color: #2A2A2A;
-$client-color: #fff;
+$client-color: #1F1F1F;
 
 @mixin Gradient {
     background: linear-gradient(269.9deg, #00C4F0 -10.18%, #0168AE 108.41%);
@@ -38,7 +38,7 @@ $client-color: #fff;
 
 
 @mixin GradientClient {
-    background: linear-gradient(269.9deg, #000000 -10.18%, #8b8b8b 108.41%);
+    background: linear-gradient(269.9deg, #FFEA00 -10.18%, #FFD700 108.41%);
 }
 
 
