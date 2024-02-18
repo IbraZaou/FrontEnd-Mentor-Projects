@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -20,7 +20,7 @@ const AvisClient = () => {
         },
         {
             name: "Previlience",
-            message: "Sed euismod, leo auctor sollicitudin fringilla, nisl elit convallis libero, eu venenatis turpis arcu ac libero."
+            message: "Une expérience exceptionnelle avec Ibra. Il a su comprendre nos besoins et livrer un site web remarquable, reflétant parfaitement notre image de marque"
         }
     ];
 
@@ -43,8 +43,14 @@ const AvisClient = () => {
                     className="mySwiper"
                 >
                     {reviews.map((review, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide className='swiperrr' key={index}>
                             <div className="review">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
                                 <h3>{review.name}</h3>
                                 <p>" {review.message} "</p>
                             </div>

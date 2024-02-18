@@ -2,6 +2,7 @@ import React from 'react';
 import DescriptionClient from '../components/DescriptionClient';
 import AvisClient from '../components/AvisClient';
 import ProjectClient from '../components/ProjectClient';
+import FormTemplateClient from '../components/FormTemplateClient';
 
 const Client = () => {
     return (
@@ -9,6 +10,7 @@ const Client = () => {
             <DescriptionClient />
             <ProjectClient />
             <AvisClient />
+            <FormTemplateClient />
         </div>
     );
 };

@@ -4,6 +4,11 @@
     height: 80vh;
     background-color: $client-color;
 
+    .client-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
     .fa-arrow-down {
         color: white;
         display: flex;
@@ -88,7 +93,7 @@
 
 @media screen and (max-width: $tablet-width) {
 
-    .description {
+    .description-client {
         height: 100vh;
         @include FlexCenter;
 

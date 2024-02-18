@@ -12,15 +12,15 @@ const DescriptionClient = () => {
 
     return (
         <div>
-            <div className='description-client'>
 
+            <div className='description-client'>
                 <div className="wrapper-description">
                     <div className="description-text">
-                        <h1>Hello ! <br /> Je suis Ibra <span>développeur passionné</span></h1>
-                        <p>Codeur passionné donnant vie à des idées numériques <br /> une ligne de code à la fois.</p>
+                        <h1>Hello ! <br /> Je suis Ibra <span>votre développeur web</span></h1>
+                        <p>Vous souhaitez avoir votre propre site internet ? <br />c'est par ici que ça se passe.</p>
 
                         <button>
-                            <a download>Devis</a>
+                            <a href='mailto:ibra.developpeur@gmail.com' >Devis</a>
                         </button>
                     </div>
 

@@ -1,16 +1,18 @@
 import React from 'react';
 import Logo from '../assets/img/site_logo.png';
-import { Link } from 'react-router-dom';
+import ToggleButton from './ToggleButton';
 
 
 const Navbar = () => {
 
     return (
         <div className='nav'>
-            <Link to='/entreprise'>
+            <div>
                 <img src={Logo} alt="Logo" />
-            </Link>
-            <Link to='/client'>Client</Link >
+            </div>
+            {/* <Link to='/entreprise' className="lien-hover">Vous souhaitez m'embaucher ?</Link > */}
+            <ToggleButton />
+
         </div>
     );
 };

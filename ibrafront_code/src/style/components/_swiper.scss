@@ -23,3 +23,26 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+//Media Q
+
+@media screen and (max-width: $larger-width) {
+    .mySwiper {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: $tablet-width) {
+    .swiper-slide {
+        width: 90vw !important;
+    }
+}
+
+
+@media screen and (max-width: $desktop-width) {
+    .mySwiper {
+        width: 90%;
+    }
+}
